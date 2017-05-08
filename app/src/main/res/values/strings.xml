@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Smart Cart</string>
-    <string name="chooseStore">Choose A Store</string>
-    <string name="defaultMode">Default Mode</string>
-    <string name="continueText">Continue</string>
-    <string name="chooseStore2">Choose Store</string>
-    <string name="budgetMode">Budget Mode</string>
-    <string name="budgetHint">Enter Budget...</string>
+    <string name="choose_store">Choose A Store</string>
+    <string name="continue_text">Continue</string>
+    <string name="choose_store_2">Choose Store</string>
+    <string name="budget_hint">Enter Budget…</string>
+    <string name="description_backarrow">back arrow</string>
+    <string name="mode_default">Default Mode</string>
+    <string name="mode_default_text">Scan and Go!</string>
+    <string name="mode_budget">Budget Mode</string>
+    <string name="mode_budget_text">Watch your spending! Budget Mode alerts you whenever your shopping cart exceeds your ideal spending amount.</string>
+    <string name="EXTRA_MODE">com.gmailbyron.ullauri.MODE</string>
+    <string name="EXTRA_BUDGET">com.gmailbyron.ullauri.BUDGET</string>
+    <string name="description_bestbuy">Best Buy</string>
 </resources>

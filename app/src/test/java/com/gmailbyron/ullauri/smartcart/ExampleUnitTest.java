@@ -1,4 +1,4 @@
-package com.byrongmail.ullauri.smartcart;
+package com.gmailbyron.ullauri.smartcart;
 
 import org.junit.Test;
 

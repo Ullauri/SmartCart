@@ -1,4 +1,4 @@
-package com.byrongmail.ullauri.smartcart;
+package com.gmailbyron.ullauri.smartcart;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

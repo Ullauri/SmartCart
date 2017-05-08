@@ -10,27 +10,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.byrongmail.ullauri.smartcart.ChooseMode">
+    tools:context="com.gmailbyron.ullauri.smartcart.ChooseModeActivity">
 
     <ImageButton
+        android:id="@+id/backArrowButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/description_backarrow"
+        android:onClick="onClick"
         android:scaleType="fitXY"
         android:visibility="visible"
-        app:srcCompat="@drawable/backarrow"
-        android:layout_height="30dp"
-        android:id="@+id/backArrow"
-        android:layout_width="30dp" />
+        app:srcCompat="@drawable/backarrow" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@id/backArrow"
+        android:layout_toEndOf="@id/backArrowButton"
         android:textSize="22sp"
         android:layout_marginTop="1dp"
         android:layout_marginStart="10dp"
         android:id="@+id/storeName"
-        android:text="@string/chooseStore2" />
+        android:text="@string/choose_store_2" />
 
     <Button
         android:id="@+id/continueButton"
@@ -39,13 +41,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:text="@string/continueText" />
+        android:onClick="onClick"
+        android:text="@string/continue_text" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/backArrow"
+        android:layout_below="@id/backArrowButton"
         android:layout_alignParentStart="true"
         android:layout_marginTop="40dp"
         android:layout_above="@+id/continueButton"
@@ -58,57 +60,58 @@
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/defaultModeRadio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/defaultMode"
+                android:checked="true"
+                android:text="@string/mode_default"
                 android:textSize="24sp"
-                android:id="@+id/defaultModeRadio"
                 android:textStyle="normal|bold" />
 
             <TextView
-                android:text="This is the defualt mode it still  has to be typed @android:string/httpErrorUnsupportedScheme"
+                android:id="@+id/defaultModeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/defaultModeText"
-                android:layout_weight="1"
-                android:paddingLeft="34dp"
-                android:paddingRight="27dp"
                 android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:paddingEnd="27dp"
+                android:paddingStart="34dp"
+                android:text="@string/mode_default"
                 android:visibility="visible" />
 
             <RadioButton
+                android:id="@+id/budgetModeRadio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="@string/budgetMode"
+                android:text="@string/mode_budget"
                 android:textSize="24sp"
-                android:id="@+id/budgetModeRadio"
-                android:textStyle="normal|bold"
-                android:layout_marginTop="20dp" />
+                android:textStyle="normal|bold" />
 
             <TextView
-                android:text="This is the defualt mode it still  has to be typed @android:string/httpErrorUnsupportedScheme"
+                android:id="@+id/budgetModeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/budgetModeText"
-                android:layout_weight="1"
-                android:paddingLeft="34dp"
-                android:paddingRight="27dp"
                 android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:paddingEnd="27dp"
+                android:paddingStart="34dp"
+                android:text="@string/mode_budget"
                 android:visibility="gone" />
 
             <EditText
+                android:id="@+id/budgetEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/budgetEditText"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:hint="@string/budgetHint"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="34dp"
+                android:ems="10"
+                android:hint="@string/budget_hint"
+                android:inputType="numberDecimal"
                 android:visibility="gone" />
 
 
